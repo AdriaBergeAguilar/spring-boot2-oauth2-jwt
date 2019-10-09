@@ -9,45 +9,31 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.marcosbarbero.lab</groupId>
-	<artifactId>spring-boot2-oauth2-jwt</artifactId>
+	<groupId>com.berge.restplaner</groupId>
+	<artifactId>parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>spring-boot2-oauth2-jwt</name>
+	<name>spring-restplaner</name>
+
 	<description>
-		<![CDATA[
-			OAuth2 + JWT using Spring Boot 2 / Spring Security 5
-		]]>
+		OAuth2 + JWT using Spring Boot 2 / Spring Security 5
+		servers Rest with restplaner
 	</description>
 
-	<licenses>
-		<license>
-			<name>Apache License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
 
 	<developers>
 		<developer>
-			<id>marcosbarbero</id>
-			<email>marcos.hgb@gmail.com</email>
-			<name>Marcos Barbero</name>
-			<timezone>Europe/Amsterdam</timezone>
+			<id>adriabergeaguilar</id>
+			<email>adriabergeaguilar@gmail.com</email>
+			<name>Adrià Bergé Aguilar</name>
+			<timezone>Europe/Londres</timezone>
 			<roles>
 				<role>Project Lead</role>
+				<role>Owner</role>
+				<role>CEO</role>
 			</roles>
 		</developer>
 	</developers>
-
-	<scm>
-		<connection>scm:git:https://github.com/marcosbarbero/spring-boot2-oauth2-jwt.git</connection>
-		<developerConnection>
-			scm:git:git@github.com:marcosbarbero/spring-boot2-oauth2-jwt.git
-		</developerConnection>
-		<url>https://github.com/marcosbarbero/spring-boot2-oauth2-jwt</url>
-		<tag>HEAD</tag>
-	</scm>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -85,6 +71,16 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.17</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
 	</dependencies>
 
